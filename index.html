@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CMPE 322 - Dashboard</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #1a1a24; color: #fff; display: flex; flex-direction: column; align-items: center; padding: 50px; margin: 0; }
+        .header { text-align: center; margin-bottom: 40px; }
+        .header h1 { color: #00d2ff; font-size: 2.5em; margin-bottom: 5px; }
+        .header p { color: #8892b0; font-size: 1.1em; }
+        .card-container { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; max-width: 900px; }
+        .card { background-color: #252535; border: 1px solid #3a3a4f; border-radius: 12px; padding: 30px; width: 250px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: white; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2); border-color: #00d2ff; }
+        .card h2 { color: #ff79c6; margin-top: 0; }
+        .card p { color: #a0aabf; font-size: 0.9em; line-height: 1.5; }
+        .badge { display: inline-block; background-color: #00d2ff; color: #000; padding: 5px 10px; border-radius: 20px; font-weight: bold; font-size: 0.8em; margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>CMPE 322 Course Notes</h1>
+        <p>Custom Lightweight HTTP Server & Markdown Parser</p>
+    </div>
+
+    <div class="card-container">
+        <a href="/week1.md" class="card">
+            <span class="badge">Week 1</span>
+            <h2>Network Edge</h2>
+            <p>Internet structure, end systems, access networks, and physical media overview.</p>
+        </a>
+
+        <a href="/week2.md" class="card">
+            <span class="badge">Week 2</span>
+            <h2>Network Core</h2>
+            <p>Packet switching vs Circuit switching, FDM, TDM, and the network of networks.</p>
+        </a>
+
+        <a href="/week3.md" class="card">
+            <span class="badge">Week 3</span>
+            <h2>Delay & Loss</h2>
+            <p>Nodal processing, queuing, transmission, and propagation delays in networks.</p>
+        </a>
+    </div>
+
+</body>
+</html>
